@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="reset.css"/>
+        <link rel="stylesheet" href="style.css"/>
+        <title>Float</title>
+    </head>
+    <body>
+        <div class="container-1">
+            <div class="box1">1</div>
+            <div class="box2">2</div>
+          </div>
+      
+         <div class="container-2">
+            <div class="box1">1</div>
+            <div class="box2">2</div>
+            <div class="box3">3</div>
+            <div class="box4">4</div>
+            <div class="box5">5</div>
+    
+          </div> 
+      
+       <div class="container-3">
+            <div class="box1">1</div>
+            <div class="box2">2</div>
+            <div class="box3">3</div>
+            <div class="box4">4</div>
+          </div>
+
+     <style> 
+
+        .container-1, div {
+            display: inline-block;
+            width: 1200px;
+             }
+        
+             .container-2 .box2,
+             .container-2 .box3,
+             .container-2 .box4,
+             .container-2 .box5 {
+                float: right;
+                height: 100px;
+                width: 100px;
+                margin-left: 15px;
+
+             }
+    
+
+        .container-1 .box1,
+        .container-2 .box1,
+        .container-3 .box1,
+        .container-3 .box2 {
+    float: left;
+    margin-right: 15px;
+        }
+        .container-1 .box2,
+        .container-2 .box5,
+        .container-2 .box4,
+        .container-2 .box3,
+        .container-2 .box2,
+        .container-3 .box3,
+        .container-3 .box4 {
+       float: right;
+       margin-left: 15px;
+        }
+    
+        .container-1,
+        .container-2,
+        .container-3 {
+          border: 5px solid red;
+          width: 1100px;
+          height: 210px;
+        top: -430px;
+        left: -666px;
+        background-color: #dfdbdb;
+        margin-top: 30px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 30px;
+        }
+
+        
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5 {
+          height: 200px;
+          width: 200px;
+          background-color: coral;
+          color: #fff;
+          text-align: center;
+          font-size: 30px;
+        }
+        
+        </style>
+     </body>
+</html>
